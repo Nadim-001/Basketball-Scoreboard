@@ -1,0 +1,27 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+                
+    </head>
+    <body>
+        <div class="container">
+            <div class="team-container">
+                <h3>HOME</h3>
+                <h1 class="scorecard" id="home-score">0</h1>
+                <button onclick="add('home',1)" id="home-el1">+1</button>
+                <button onclick="add('home',2)" id="home-el2">+2</button>
+                <button onclick="add('home',3)" id="home-el3">+3</button>
+            </div>
+            <div class="team-container">
+                <h3>GUEST</h3>
+                <h1 class="scorecard" id="away-score">0</h1>
+                <button onclick="add('away',1)" id="away-el1">+1</button>
+                <button onclick="add('away',2)" id="away-el2">+2</button>
+                <button onclick="add('away',3)" id="away-el3">+3</button>
+            </div>
+        </div>
+        <button onclick="newGame()" id="new-game-btn">NEW GAME</button>
+        <script src="index.js"></script>
+    </body>
+</html>
